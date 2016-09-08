@@ -7,11 +7,12 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "types": [
+      "node"
+    ]
   },
-  "files": [
-    "typings/index.d.ts"
-  ],
+  "files": [],
   "exclude": [
     "node_modules",
     "dist"

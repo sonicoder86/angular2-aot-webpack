@@ -13,24 +13,24 @@ import * as import5 from '@angular/core/src/linker/view_utils';
 import * as import6 from '@angular/core/src/di/injector';
 import * as import7 from '@angular/core/src/linker/view_type';
 import * as import8 from '@angular/core/src/change_detection/change_detection';
-import * as import9 from '@angular/core/src/linker/component_factory';
-import * as import10 from '@angular/core/src/metadata/view';
+import * as import9 from '@angular/core/src/metadata/view';
+import * as import10 from '@angular/core/src/linker/component_factory';
 const nodeDebugInfos_HelloWorldComponent_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.HelloWorldComponent],import1.HelloWorldComponent,{})];
-var renderType_HelloWorldComponent_Host:import2.RenderComponentType = null;
+var renderType_HelloWorldComponent_Host:import2.RenderComponentType = (null as any);
 class _View_HelloWorldComponent_Host0 extends import3.DebugAppView<any> {
   _el_0:any;
-  private _appEl_0:import4.AppElement;
+  /*private*/ _appEl_0:import4.AppElement;
   _HelloWorldComponent_0_4:import1.HelloWorldComponent;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_HelloWorldComponent_Host0,renderType_HelloWorldComponent_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_HelloWorldComponent_Host0);
   }
   createInternal(rootSelector:string):import4.AppElement {
     this._el_0 = this.selectOrCreateHostElement('hello-world-app',rootSelector,this.debug(0,0,0));
-    this._appEl_0 = new import4.AppElement(0,null,this,this._el_0);
+    this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_HelloWorldComponent0(this.viewUtils,this.injector(0),this._appEl_0);
     this._HelloWorldComponent_0_4 = new import1.HelloWorldComponent();
     this._appEl_0.initComponent(this._HelloWorldComponent_0_4,[],compView_0);
-    compView_0.create(this._HelloWorldComponent_0_4,this.projectableNodes,null);
+    compView_0.create(this._HelloWorldComponent_0_4,this.projectableNodes,(null as any));
     this.init([].concat([this._el_0]),[this._el_0],[],[]);
     return this._appEl_0;
   }
@@ -40,17 +40,17 @@ class _View_HelloWorldComponent_Host0 extends import3.DebugAppView<any> {
   }
 }
 function viewFactory_HelloWorldComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
-  if ((renderType_HelloWorldComponent_Host === null)) { (renderType_HelloWorldComponent_Host = viewUtils.createRenderComponentType('',0,null,[],{})); }
+  if ((renderType_HelloWorldComponent_Host === (null as any))) { (renderType_HelloWorldComponent_Host = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,[],{})); }
   return new _View_HelloWorldComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const HelloWorldComponentNgFactory:import9.ComponentFactory<import1.HelloWorldComponent> = new import9.ComponentFactory<import1.HelloWorldComponent>('hello-world-app',viewFactory_HelloWorldComponent_Host0,import1.HelloWorldComponent);
+export const HelloWorldComponentNgFactory:import10.ComponentFactory<import1.HelloWorldComponent> = new import10.ComponentFactory<import1.HelloWorldComponent>('hello-world-app',viewFactory_HelloWorldComponent_Host0,import1.HelloWorldComponent);
 const styles_HelloWorldComponent:any[] = [];
 const nodeDebugInfos_HelloWorldComponent0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],null,{}),
-  new import0.StaticNodeDebugInfo([],null,{})
+  new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([],(null as any),{})
 ]
 ;
-var renderType_HelloWorldComponent:import2.RenderComponentType = null;
+var renderType_HelloWorldComponent:import2.RenderComponentType = (null as any);
 class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorldComponent> {
   _el_0:any;
   _text_1:any;
@@ -66,10 +66,10 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
       this._text_1
     ]
     ,[],[]);
-    return null;
+    return (null as any);
   }
 }
 export function viewFactory_HelloWorldComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.HelloWorldComponent> {
-  if ((renderType_HelloWorldComponent === null)) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.component.ts class HelloWorldComponent - inline template',0,import10.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
+  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.component.ts class HelloWorldComponent - inline template',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
   return new _View_HelloWorldComponent0(viewUtils,parentInjector,declarationEl);
 }

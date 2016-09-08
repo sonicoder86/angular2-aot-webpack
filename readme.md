@@ -1,7 +1,7 @@
 # Angular 2 AOT (Ahead Of Time) offline compilation example with Webpack
 [![devDependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack/dev-status.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack?type=dev)
 
-This repository shows how to use the Angular 2 (RC5) command line offline compiler (ngc) with Webpack.
+This repository shows how to use the Angular 2 (RC6) command line offline compiler (ngc) with Webpack.
 
 The application consists of a simple component(```app/hello-world.component.ts```) 
 and a module(```app/main.ts```) which is bootstrapped.
@@ -20,7 +20,7 @@ You can change between the different builds with commenting/uncommenting entry f
 
 ### Requirements
 
-- Typescript >= 1.9-dev
+- Typescript >= 2.0
 
 ### Known issues
 
@@ -28,10 +28,7 @@ Templates must be inlined to the components.
 If not, a preprocessor is needed for inlining them, because 
 otherwise the compiler can not determine what is needed in the templates.
 
-Tree-shaking not included in this example, because tree-shaking only works with Typescript 2.0-dev+ 
-and the packages needed for offline compilation have a strict dependency on 1.9-dev.
-Tried it with Typescript 2.0-dev, it works, but ```npm install``` complains about unmet dependencies
-and quits with error code.
+Tree-shaking not included in this example.
 
 If you wanna see Typescript tree-shaking 
 [check out this repository](https://github.com/blacksonic/typescript-webpack-tree-shaking).

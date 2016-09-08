@@ -16,7 +16,10 @@
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
     "outDir": "./dist",
-    "rootDir": "./app"
+    "rootDir": "./app",
+    "types": [
+      "node"
+    ]
   },
   "angularCompilerOptions": {
     "debug": true
@@ -24,5 +27,9 @@
   "compileOnSave": false,
   "files": [
     "app/main.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
