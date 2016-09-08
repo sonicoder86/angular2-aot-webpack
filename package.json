@@ -30,7 +30,6 @@
     "@angular/platform-browser": "^2.0.0-rc.6",
     "@angular/platform-browser-dynamic": "^2.0.0-rc.6",
     "@angular/platform-server": "^2.0.0-rc.6",
-    "@types/es6-promise": "0.0.31",
     "@types/es6-shim": "0.0.31",
     "@types/node": "^6.0.38",
     "es6-promise": "^3.2.1",
