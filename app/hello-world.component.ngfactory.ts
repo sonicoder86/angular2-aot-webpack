@@ -47,6 +47,7 @@ export const HelloWorldComponentNgFactory:import10.ComponentFactory<import1.Hell
 const styles_HelloWorldComponent:any[] = [];
 const nodeDebugInfos_HelloWorldComponent0:import0.StaticNodeDebugInfo[] = [
   new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{})
 ]
 ;
@@ -54,6 +55,7 @@ var renderType_HelloWorldComponent:import2.RenderComponentType = (null as any);
 class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorldComponent> {
   _el_0:any;
   _text_1:any;
+  _text_2:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_HelloWorldComponent0,renderType_HelloWorldComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_HelloWorldComponent0);
   }
@@ -61,15 +63,17 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
     this._el_0 = this.renderer.createElement(parentRenderNode,'h1',this.debug(0,0,0));
     this._text_1 = this.renderer.createText(this._el_0,'Hello World!',this.debug(1,0,4));
+    this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,21));
     this.init([],[
       this._el_0,
-      this._text_1
+      this._text_1,
+      this._text_2
     ]
     ,[],[]);
     return (null as any);
   }
 }
 export function viewFactory_HelloWorldComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.HelloWorldComponent> {
-  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.component.ts class HelloWorldComponent - inline template',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
+  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.template.html',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
   return new _View_HelloWorldComponent0(viewUtils,parentInjector,declarationEl);
 }

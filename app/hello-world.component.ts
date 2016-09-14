@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'hello-world-app',
-  template: '<h1>Hello World!</h1>'
+  templateUrl: 'hello-world.template.html'
 })
 export class HelloWorldComponent {}

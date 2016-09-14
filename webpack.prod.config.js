@@ -17,10 +17,14 @@ module.exports = {
     loaders: [
       {
         test: /\.ts$/,
-        loader: 'ts',
-        query: {
-          configFileName: 'tsconfig.json'
-        }
+        loaders: [
+          'awesome-typescript?tsconfig=tsconfig.json',
+          'angular2-template'
+        ]
+      },
+      {
+        test: /\.html$/,
+        loader: 'raw'
       }
     ]
   },

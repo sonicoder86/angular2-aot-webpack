@@ -9,7 +9,8 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "types": [
-      "es6-shim"
+      "es6-shim",
+      "node"
     ]
   },
   "files": [],
