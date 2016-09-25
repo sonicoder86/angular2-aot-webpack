@@ -18,9 +18,7 @@ Both development and production builds create the AOT compiled files.
 The application is bundled with Webpack from the bootstrap files and is available on ```http://localhost:9000```.
 You can change between the different builds with commenting/uncommenting entry files from ```index.html```.
 
-### Known issues
+### Further reading
 
-Tree-shaking not included in this example.
-
-If you wanna see Typescript tree-shaking 
+If you wanna see Typescript tree-shaking in details
 [check out this repository](https://github.com/blacksonic/typescript-webpack-tree-shaking).
