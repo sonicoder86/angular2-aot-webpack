@@ -30,7 +30,7 @@ module.exports = {
 
   resolve: {
     modules: [
-      "node_modules",
+      'node_modules',
       path.resolve(__dirname, 'app')
     ],
     extensions: ['.ts', '.js']
