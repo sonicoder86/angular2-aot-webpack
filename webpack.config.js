@@ -13,17 +13,17 @@ module.exports = {
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.ts$/,
-        loaders: [
+        use: [
           'awesome-typescript?tsconfig=tsconfig.json',
           'angular2-template'
         ]
       },
       {
         test: /\.html$/,
-        loader: 'raw'
+        use: 'raw'
       }
     ]
   },
