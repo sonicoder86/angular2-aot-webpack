@@ -37,7 +37,6 @@ import * as import29 from '@angular/core/src/render/api';
 import * as import30 from '@angular/core/src/security';
 import * as import31 from '@angular/core/src/change_detection/differs/iterable_differs';
 import * as import32 from '@angular/core/src/change_detection/differs/keyvalue_differs';
-import * as import33 from '@angular/core/src/i18n/tokens';
 class MainModuleInjector extends import0.NgModuleInjector<import1.MainModule> {
   _CommonModule_0:import2.CommonModule;
   _ApplicationModule_1:import3.ApplicationModule;
@@ -67,12 +66,11 @@ class MainModuleInjector extends import0.NgModuleInjector<import1.MainModule> {
   __KeyValueDiffers_25:any;
   __SharedStylesHost_26:any;
   __Title_27:import16.Title;
-  __TRANSLATIONS_FORMAT_28:any;
   constructor(parent:import17.Injector) {
     super(parent,[import18.HelloWorldComponentNgFactory],[import18.HelloWorldComponentNgFactory]);
   }
   get _LOCALE_ID_4():any {
-    if ((this.__LOCALE_ID_4 == (null as any))) { (this.__LOCALE_ID_4 = (null as any)); }
+    if ((this.__LOCALE_ID_4 == (null as any))) { (this.__LOCALE_ID_4 = 'en-US'); }
     return this.__LOCALE_ID_4;
   }
   get _NgLocalization_5():import5.NgLocaleLocalization {
@@ -156,10 +154,6 @@ class MainModuleInjector extends import0.NgModuleInjector<import1.MainModule> {
     if ((this.__Title_27 == (null as any))) { (this.__Title_27 = new import16.Title()); }
     return this.__Title_27;
   }
-  get _TRANSLATIONS_FORMAT_28():any {
-    if ((this.__TRANSLATIONS_FORMAT_28 == (null as any))) { (this.__TRANSLATIONS_FORMAT_28 = (null as any)); }
-    return this.__TRANSLATIONS_FORMAT_28;
-  }
   createInternal():import1.MainModule {
     this._CommonModule_0 = new import2.CommonModule();
     this._ApplicationModule_1 = new import3.ApplicationModule();
@@ -200,7 +194,6 @@ class MainModuleInjector extends import0.NgModuleInjector<import1.MainModule> {
     if ((token === import32.KeyValueDiffers)) { return this._KeyValueDiffers_25; }
     if ((token === import12.SharedStylesHost)) { return this._SharedStylesHost_26; }
     if ((token === import16.Title)) { return this._Title_27; }
-    if ((token === import33.TRANSLATIONS_FORMAT)) { return this._TRANSLATIONS_FORMAT_28; }
     return notFoundResult;
   }
   destroyInternal():void {

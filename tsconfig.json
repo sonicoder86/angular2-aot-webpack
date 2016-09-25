@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "types": [
-      "es6-shim",
+      "core-js",
       "node"
     ]
   },
