@@ -1,6 +1,6 @@
 'use strict';
-let webpack = require('webpack');
 let path = require('path');
+let webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -42,7 +42,13 @@ module.exports = {
         comments: false
       },
       sourceMap: false
-    })
+    }),
+    new webpack.ProgressPlugin(),
+    new webpack.ContextReplacementPlugin(
+      // The (\\|\/) piece accounts for path separators in *nix and Windows
+      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      path.join(process.cwd(), 'app')
+    )
   ],
 
   resolve: {
