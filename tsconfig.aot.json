@@ -23,11 +23,12 @@
     ]
   },
   "angularCompilerOptions": {
-    "debug": true
+    "debug": true,
+    "skipMetadataEmit": true
   },
   "compileOnSave": false,
   "files": [
-    "app/main.ts"
+    "app/bootstrap.aot.ts"
   ],
   "exclude": [
     "node_modules",

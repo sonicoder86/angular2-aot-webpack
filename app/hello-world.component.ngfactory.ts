@@ -62,8 +62,8 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
   createInternal(rootSelector:string):import4.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
     this._el_0 = this.renderer.createElement(parentRenderNode,'h1',this.debug(0,0,0));
-    this._text_1 = this.renderer.createText(this._el_0,'Hello World!',this.debug(1,0,4));
-    this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,21));
+    this._text_1 = this.renderer.createText(this._el_0,'Hello World!!!',this.debug(1,0,4));
+    this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,23));
     this.init(([] as any[]),[
       this._el_0,
       this._text_1,
@@ -74,6 +74,6 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
   }
 }
 export function viewFactory_HelloWorldComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.HelloWorldComponent> {
-  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('C:/Users/bernting/Source/Repos/angular2-aot-webpack-new/app/hello-world.template.html',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
+  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('C:/Users/bernting/Source/Repos/angular2-aot-webpack/app/hello-world.template.html',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
   return new _View_HelloWorldComponent0(viewUtils,parentInjector,declarationEl);
 }

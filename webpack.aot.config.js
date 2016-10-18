@@ -18,8 +18,7 @@ module.exports = {
       {
         test: /\.ts$/,
         use: [
-          'awesome-typescript?tsconfig=tsconfig.json',
-          'angular2-template'
+          "@ngtools/webpack"
         ]
       },
       {
