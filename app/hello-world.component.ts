@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
   selector: 'hello-world-app',
   templateUrl: 'hello-world.template.html'
 })
-export class HelloWorldComponent { private cooltest: any; }
+export class HelloWorldComponent { }
