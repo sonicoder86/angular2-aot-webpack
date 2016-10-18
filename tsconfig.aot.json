@@ -17,16 +17,18 @@
     "noFallthroughCasesInSwitch": true,
     "outDir": "./dist",
     "rootDir": "./app",
+    "typeRoots": [ "./node_modules/@types" ],
     "types": [
       "node"
     ]
   },
   "angularCompilerOptions": {
-    "debug": true
+    "debug": true,
+    "skipMetadataEmit": true
   },
   "compileOnSave": false,
   "files": [
-    "app/main.ts"
+    "app/bootstrap.aot.ts"
   ],
   "exclude": [
     "node_modules",

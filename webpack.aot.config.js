@@ -18,8 +18,7 @@ module.exports = {
       {
         test: /\.ts$/,
         use: [
-          'awesome-typescript?tsconfig=tsconfig.json',
-          'angular2-template'
+          "@ngtools/webpack"
         ]
       },
       {
@@ -30,8 +29,8 @@ module.exports = {
   },
 
   plugins: [
-    new ngtools.NgcWebpackPlugin({
-      project: './tsconfig.aot.json',
+    new ngtools.AotPlugin({
+      tsConfigPath: './tsconfig.aot.json',
       baseDir: path.resolve(__dirname, ''),
       entryModule: path.join(__dirname, 'app', 'main') + '#MainModule'
     }),
