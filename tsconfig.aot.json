@@ -17,6 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "outDir": "./dist",
     "rootDir": "./app",
+    "typeRoots": [ "./node_modules/@types" ],
     "types": [
       "node"
     ]

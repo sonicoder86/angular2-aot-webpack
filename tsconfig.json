@@ -9,6 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
+    "typeRoots": [ "./node_modules/@types" ],
     "types": [
       "core-js",
       "node"
