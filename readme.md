@@ -22,6 +22,9 @@ You can change between the different builds with commenting/uncommenting entry f
 
 Not able to update to Angular 2.1.0 and Typescript 2.0.3 due to unmet dependencies.
 
+If you get unmet dependencies for the ```npm install``` command when updating,
+just delete the ```node_modules``` directory and do a clean install.
+
 ### Further reading
 
 If you wanna see Typescript tree-shaking in details
