@@ -41,7 +41,7 @@ module.exports = {
       output: {
         comments: false
       },
-      sourceMap: false
+      sourceMap: true
     }),
     new webpack.ProgressPlugin(),
     new webpack.ContextReplacementPlugin(
@@ -59,5 +59,5 @@ module.exports = {
     extensions: ['.ts', '.js']
   },
 
-  devtool: false
+  devtool: 'source-map'
 };

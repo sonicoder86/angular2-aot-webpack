@@ -4,6 +4,8 @@
   "description": "Angular 2 AOT (Ahead Of Time) offline compilation example with Webpack",
   "main": "index.js",
   "scripts": {
+    "explorer": "source-map-explorer ./dist/bootstrap.bundle.js ./dist/bootstrap.bundle.js.map",
+    "explorer-aot": "source-map-explorer ./dist/bootstrap.aot.bundle.js ./dist/bootstrap.aot.bundle.js.map",
     "ngc": "ngc -p ./tsconfig.aot.json",
     "serve": "http-server -a 0.0.0.0 -p 9000",
     "start": "npm run ngc && npm run webpack && npm run serve",
@@ -44,6 +46,7 @@
     "http-server": "^0.9.0",
     "raw-loader": "^0.5.1",
     "rxjs": "5.0.0-beta.12",
+    "source-map-explorer": "^1.3.2",
     "typescript": "2.0.2",
     "webpack": "^2.1.0-beta.25",
     "zone.js": "0.6.26"

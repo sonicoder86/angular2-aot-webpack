@@ -51,5 +51,5 @@ module.exports = {
     extensions: ['.ts', '.js']
   },
 
-  devtool: false
+  devtool: 'source-map'
 };

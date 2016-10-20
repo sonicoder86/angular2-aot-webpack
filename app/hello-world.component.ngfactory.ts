@@ -29,9 +29,9 @@ class _View_HelloWorldComponent_Host0 extends import3.DebugAppView<any> {
     this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_HelloWorldComponent0(this.viewUtils,this.injector(0),this._appEl_0);
     this._HelloWorldComponent_0_4 = new import1.HelloWorldComponent();
-    this._appEl_0.initComponent(this._HelloWorldComponent_0_4,([] as any[]),compView_0);
+    this._appEl_0.initComponent(this._HelloWorldComponent_0_4,[],compView_0);
     compView_0.create(this._HelloWorldComponent_0_4,this.projectableNodes,(null as any));
-    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
+    this.init([].concat([this._el_0]),[this._el_0],[],[]);
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -40,15 +40,15 @@ class _View_HelloWorldComponent_Host0 extends import3.DebugAppView<any> {
   }
 }
 function viewFactory_HelloWorldComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
-  if ((renderType_HelloWorldComponent_Host === (null as any))) { (renderType_HelloWorldComponent_Host = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_HelloWorldComponent_Host === (null as any))) { (renderType_HelloWorldComponent_Host = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,[],{})); }
   return new _View_HelloWorldComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const HelloWorldComponentNgFactory:import10.ComponentFactory<import1.HelloWorldComponent> = new import10.ComponentFactory<import1.HelloWorldComponent>('hello-world-app',viewFactory_HelloWorldComponent_Host0,import1.HelloWorldComponent);
-const styles_HelloWorldComponent:any[] = ([] as any[]);
+const styles_HelloWorldComponent:any[] = [];
 const nodeDebugInfos_HelloWorldComponent0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import0.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import0.StaticNodeDebugInfo(([] as any[]),(null as any),{})
+  new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([],(null as any),{})
 ]
 ;
 var renderType_HelloWorldComponent:import2.RenderComponentType = (null as any);
@@ -64,16 +64,16 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
     this._el_0 = this.renderer.createElement(parentRenderNode,'h1',this.debug(0,0,0));
     this._text_1 = this.renderer.createText(this._el_0,'Hello World!',this.debug(1,0,4));
     this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,21));
-    this.init(([] as any[]),[
+    this.init([],[
       this._el_0,
       this._text_1,
       this._text_2
     ]
-    ,([] as any[]),([] as any[]));
+    ,[],[]);
     return (null as any);
   }
 }
 export function viewFactory_HelloWorldComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.HelloWorldComponent> {
-  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/Users/vakrilov/Work/Projects/angular2-aot-webpack/app/hello-world.template.html',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
+  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.template.html',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
   return new _View_HelloWorldComponent0(viewUtils,parentInjector,declarationEl);
 }
