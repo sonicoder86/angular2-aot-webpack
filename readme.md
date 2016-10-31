@@ -18,6 +18,17 @@ Both development and production builds create the AOT compiled files.
 The application is bundled with Webpack from the bootstrap files and is available on ```http://localhost:9000```.
 You can change between the different builds with commenting/uncommenting entry files from ```index.html```.
 
+### Starting the application
+
+There are two modes for the application.
+
+Using the command line tool ```ngc``` for compilation is the default one 
+and can be started with ```npm start```. It bundles once and doesn't refresh on changes.
+
+The second one is using the ```@ngtools/webpack``` loader plugin for compilation
+and can be started with ```npm run start-plugin```. It uses ```webpack-dev-server``` and 
+live reloads on every file change.
+
 ### Known issues
 
 If you get unmet dependencies for the ```npm install``` command when updating,

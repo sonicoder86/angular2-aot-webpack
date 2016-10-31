@@ -4,6 +4,7 @@ let ngtools = require('@ngtools/webpack');
 
 module.exports = {
   entry: {
+    'bootstrap': './app/bootstrap.ts',
     'bootstrap.aot': './app/bootstrap.aot.ts',
   },
 
@@ -22,6 +23,8 @@ module.exports = {
   ]),
 
   resolve: require('./webpack/resolve'),
+
+  devServer: require('./webpack/dev-server'),
 
   devtool: 'source-map'
 };

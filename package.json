@@ -9,6 +9,7 @@
     "ngc": "ngc -p ./tsconfig.aot.json",
     "serve": "http-server ./dist -a 0.0.0.0 -p 9000",
     "start": "npm run ngc && npm run webpack && npm run serve",
+    "start-plugin": "webpack-dev-server --config webpack.aot.config.js",
     "start-prod": "npm run ngc && npm run webpack-prod && npm run serve",
     "webpack": "webpack --config webpack.config.js",
     "webpack-aot": "webpack --config webpack.aot.config.js",
@@ -52,6 +53,7 @@
     "to-string-loader": "^1.1.5",
     "typescript": "2.0.6",
     "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.7",
     "zone.js": "0.6.26"
   }
 }
