@@ -15,6 +15,7 @@ import * as import7 from '@angular/core/src/linker/view_type';
 import * as import8 from '@angular/core/src/change_detection/change_detection';
 import * as import9 from '@angular/core/src/metadata/view';
 import * as import10 from '@angular/core/src/linker/component_factory';
+import * as import11 from './hello-world.style.css.shim';
 export class Wrapper_HelloWorldComponent {
   context:import0.HelloWorldComponent;
   changed:boolean;
@@ -66,7 +67,7 @@ function viewFactory_HelloWorldComponent_Host0(viewUtils:import5.ViewUtils,paren
   return new _View_HelloWorldComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const HelloWorldComponentNgFactory:import10.ComponentFactory<import0.HelloWorldComponent> = new import10.ComponentFactory<import0.HelloWorldComponent>('hello-world-app',viewFactory_HelloWorldComponent_Host0,import0.HelloWorldComponent);
-const styles_HelloWorldComponent:any[] = ([] as any[]);
+const styles_HelloWorldComponent:any[] = [import11.styles];
 const nodeDebugInfos_HelloWorldComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -96,6 +97,6 @@ class _View_HelloWorldComponent0 extends import1.DebugAppView<import0.HelloWorld
   }
 }
 export function viewFactory_HelloWorldComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.HelloWorldComponent> {
-  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.template.html',0,import9.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
+  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.template.html',0,import9.ViewEncapsulation.Emulated,styles_HelloWorldComponent,{})); }
   return new _View_HelloWorldComponent0(viewUtils,parentInjector,declarationEl);
 }
