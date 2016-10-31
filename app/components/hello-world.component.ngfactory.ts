@@ -97,6 +97,6 @@ class _View_HelloWorldComponent0 extends import1.DebugAppView<import0.HelloWorld
   }
 }
 export function viewFactory_HelloWorldComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.HelloWorldComponent> {
-  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/hello-world.template.html',0,import9.ViewEncapsulation.Emulated,styles_HelloWorldComponent,{})); }
+  if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/app/components/hello-world.template.html',0,import9.ViewEncapsulation.Emulated,styles_HelloWorldComponent,{})); }
   return new _View_HelloWorldComponent0(viewUtils,parentInjector,declarationEl);
 }

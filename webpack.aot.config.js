@@ -39,7 +39,7 @@ module.exports = {
       baseDir: path.resolve(__dirname, ''),
       entryModule: path.join(__dirname, 'app', 'main') + '#MainModule'
     }),
-    // new webpack.ProgressPlugin(),
+    new webpack.ProgressPlugin(),
     new webpack.ContextReplacementPlugin(
       // The (\\|\/) piece accounts for path separators in *nix and Windows
       /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
