@@ -1,11 +1,14 @@
 'use strict';
+let path = require('path');
 let webpack = require('webpack');
 
 module.exports = {
   entry: {
-    'bootstrap': './src/app/bootstrap.ts',
-    'bootstrap.aot': './src/app/bootstrap.aot.ts',
+    'bootstrap': './app/bootstrap.ts',
+    'bootstrap.aot': './app/bootstrap.aot.ts',
   },
+
+  context: path.join(process.cwd(), 'src'),
 
   output: require('./webpack/output'),
 

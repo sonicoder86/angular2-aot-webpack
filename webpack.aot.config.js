@@ -4,8 +4,10 @@ let ngtools = require('@ngtools/webpack');
 
 module.exports = {
   entry: {
-    'bootstrap.aot': './src/app/bootstrap.aot.ts',
+    'bootstrap.aot': './app/bootstrap.aot.ts',
   },
+
+  context: path.join(process.cwd(), 'src'),
 
   output: require('./webpack/output'),
 

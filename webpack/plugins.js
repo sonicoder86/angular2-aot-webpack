@@ -1,5 +1,6 @@
 'use strict';
 let webpack = require('webpack');
+let CopyWebpackPlugin = require('copy-webpack-plugin');
 let path = require('path');
 
 module.exports = [
@@ -8,5 +9,9 @@ module.exports = [
     // The (\\|\/) piece accounts for path separators in *nix and Windows
     /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
     path.join(process.cwd(), 'src')
-  )
+  ),
+  new CopyWebpackPlugin([
+    { from: 'index.html' },
+    { from: 'favicon.ico' }
+  ])
 ];
