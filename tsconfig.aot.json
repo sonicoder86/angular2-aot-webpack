@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
     "declaration": false,
@@ -15,10 +15,11 @@
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist",
+    "outDir": "./ngfactory",
     "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
+      "core-js",
       "node"
     ]
   },
