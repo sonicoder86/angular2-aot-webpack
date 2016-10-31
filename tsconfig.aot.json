@@ -16,7 +16,7 @@
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
     "outDir": "./dist",
-    "rootDir": "./app",
+    "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
       "node"
@@ -27,7 +27,7 @@
   },
   "compileOnSave": false,
   "files": [
-    "app/main.ts"
+    "src/app/main.ts"
   ],
   "exclude": [
     "node_modules",
