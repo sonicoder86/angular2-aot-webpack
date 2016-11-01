@@ -3,10 +3,7 @@ let path = require('path');
 let webpack = require('webpack');
 
 module.exports = {
-  entry: {
-    'bootstrap.prod': './app/bootstrap.ts',
-    'bootstrap.aot.prod': './app/bootstrap.aot.ts',
-  },
+  entry: require('./webpack/entry'),
 
   context: path.join(process.cwd(), 'src'),
 
