@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Angular 2 Production with Webpack</title>
+    <title>Angular 2 AOT with Webpack</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
 </head>
 <body>
-<hello-world-app>Loading...</hello-world-app>
+<link rel="stylesheet" type="text/css" href="style.bundle.css"/>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Angular 2 AOT with Webpack</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="starter-template">
+        <hello-world-app></hello-world-app>
+    </div>
+
+</div>
 
 <script src="polyfill.bundle.js"></script>
 <!--<script src="bootstrap.bundle.js"></script>-->
 <script src="bootstrap.aot.bundle.js"></script>
-
-<!--<script src="bootstrap.prod.bundle.js"></script>-->
-<!--<script src="bootstrap.aot.prod.bundle.js"></script>-->
 
 </body>
 </html>

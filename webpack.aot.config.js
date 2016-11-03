@@ -23,5 +23,7 @@ module.exports = {
 
   devServer: require('./webpack/dev-server'),
 
+  stats: 'errors-only',
+
   devtool: 'source-map'
 };

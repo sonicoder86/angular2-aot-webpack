@@ -15,5 +15,7 @@ module.exports = {
 
   resolve: require('./webpack/resolve'),
 
+  stats: 'errors-only',
+
   devtool: 'source-map'
 };

@@ -1,6 +1,8 @@
 'use strict';
+
 let webpack = require('webpack');
 let CopyWebpackPlugin = require('copy-webpack-plugin');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
 let path = require('path');
 
 module.exports = [
@@ -13,5 +15,6 @@ module.exports = [
   new CopyWebpackPlugin([
     { from: 'index.html' },
     { from: 'favicon.ico' }
-  ])
+  ]),
+  new ExtractTextPlugin('style.bundle.css')
 ];
