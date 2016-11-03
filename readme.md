@@ -1,4 +1,5 @@
 # Angular 2 AOT (Ahead Of Time) offline compilation example with Webpack
+[![Dependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack)
 [![devDependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack/dev-status.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack?type=dev)
 
 This repository shows how to use the Angular 2 (final - 2.1.2) command line offline compiler (ngc) with Webpack.
