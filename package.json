@@ -8,7 +8,7 @@
     "explorer-aot": "source-map-explorer ./dist/bootstrap.aot.bundle.js ./dist/bootstrap.aot.bundle.js.map",
     "ngc": "ngc -p ./tsconfig.aot.json",
     "serve": "http-server ./dist -a 0.0.0.0 -p 9000",
-    "start": "npm run ngc && npm run webpack && npm run serve",
+    "start": "npm run ngc && webpack-dev-server",
     "start-plugin": "webpack-dev-server --config webpack.aot.config.js",
     "start-prod": "npm run ngc && npm run webpack-prod && npm run serve",
     "build": "npm run ngc && npm run webpack-prod",

@@ -5,7 +5,7 @@
  /* tslint:disable */
 
 import * as import0 from '@angular/core/src/linker/ng_module_factory';
-import * as import1 from './main';
+import * as import1 from './main.module';
 import * as import2 from '@angular/common/src/common_module';
 import * as import3 from '@angular/core/src/application_module';
 import * as import4 from '@angular/platform-browser/src/browser';
@@ -22,7 +22,7 @@ import * as import14 from '@angular/platform-browser/src/security/dom_sanitizati
 import * as import15 from '@angular/core/src/linker/view_utils';
 import * as import16 from '@angular/platform-browser/src/browser/title';
 import * as import17 from '@angular/core/src/di/injector';
-import * as import18 from './components/hello-world.component.ngfactory';
+import * as import18 from '../components/hello-world.component.ngfactory';
 import * as import19 from '@angular/core/src/application_tokens';
 import * as import20 from '@angular/platform-browser/src/dom/events/dom_events';
 import * as import21 from '@angular/platform-browser/src/dom/events/key_events';

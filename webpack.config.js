@@ -1,6 +1,5 @@
 'use strict';
 let path = require('path');
-let webpack = require('webpack');
 
 module.exports = {
   entry: require('./webpack/entry'),
@@ -14,6 +13,8 @@ module.exports = {
   plugins: require('./webpack/plugins'),
 
   resolve: require('./webpack/resolve'),
+
+  devServer: require('./webpack/dev-server'),
 
   stats: 'errors-only',
 
