@@ -32,6 +32,10 @@ live reloads on every file change.
 
 ### Known issues
 
+[AOT related issues](https://github.com/angular/angular/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20aot)
+
+[AOT Webpack plugin related issues](https://github.com/angular/angular-cli/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20aot)
+
 If you get unmet dependencies for the ```npm install``` command when updating,
 just delete the ```node_modules``` directory and do a clean install.
 
