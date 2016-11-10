@@ -19,5 +19,9 @@
   "exclude": [
     "node_modules",
     "dist"
-  ]
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  }
 }

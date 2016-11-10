@@ -7,7 +7,7 @@ module.exports = {
   rules: [
     {
       test: /\.ts$/,
-      use: ['@ngtools/webpack'] // same as ['awesome-typescript', 'angular2-template']
+      use: ['awesome-typescript', 'angular2-template']
     },
     {
       test: /\.html$/,
