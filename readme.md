@@ -2,7 +2,7 @@
 [![Dependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack)
 [![devDependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack/dev-status.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack?type=dev)
 
-This repository shows how to use the Angular 2 (final - 2.1.2) command line offline compiler (ngc) with Webpack.
+This repository shows how to use the Angular 2 (final 2.2.0) command line offline compiler (ngc) with Webpack.
 
 The application consists of a simple component(```src/app/hello-world.component.ts```) 
 and a module(```src/app/main.ts```) which is bootstrapped.
