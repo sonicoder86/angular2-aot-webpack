@@ -7,11 +7,11 @@ module.exports = {
   rules: [
     {
       test: /\.ts$/,
-      use: ['awesome-typescript', 'angular2-template']
+      use: ['awesome-typescript-loader', 'angular2-template-loader']
     },
     {
       test: /\.html$/,
-      use: 'raw'
+      use: 'raw-loader'
     },
     {
       test: /\.css$/,
@@ -28,11 +28,11 @@ module.exports = {
     },
     {
       test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'url?limit=10000&mimetype=application/font-woff'
+      loader: 'url-loader?limit=10000&mimetype=application/font-woff'
     },
     {
       test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'file'
+      loader: 'file-loader'
     }
   ]
 };
