@@ -49,3 +49,4 @@ live reloads on every file change.
 
 - [Angular CLI](https://github.com/angular/angular-cli)
 - [Angular 2 Seed](https://github.com/mgechev/angular-seed)
+- [Angular 2 Universal Starter](https://github.com/angular/universal-starter)
