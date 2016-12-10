@@ -19,8 +19,11 @@
     "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
-      "core-js",
       "node"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
     ]
   },
   "angularCompilerOptions": {

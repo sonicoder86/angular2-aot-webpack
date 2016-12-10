@@ -11,8 +11,11 @@
     "sourceMap": true,
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
-      "core-js",
       "node"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
     ]
   },
   "files": [],
