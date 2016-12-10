@@ -15,7 +15,7 @@
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./ngfactory",
+    "outDir": "./tmp",
     "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
