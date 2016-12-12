@@ -1,20 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
-    "declaration": false,
-    "removeComments": true,
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "mapRoot": "",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
-    "pretty": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitUseStrict": false,
-    "noFallthroughCasesInSwitch": true,
     "outDir": "./tmp",
     "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
@@ -27,12 +20,11 @@
     ]
   },
   "angularCompilerOptions": {
+    "genDir": "./",
+    "entryModule": "src/app/modules/main.module.ts#MainModule",
     "debug": true
   },
   "compileOnSave": false,
-  "files": [
-    "src/app/modules/main.module.ts"
-  ],
   "exclude": [
     "node_modules",
     "dist"
