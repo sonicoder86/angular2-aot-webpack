@@ -9,7 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "outDir": "./tmp",
-    "rootDir": "./src/app",
+    "rootDir": ".",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
       "node"
@@ -20,7 +20,7 @@
     ]
   },
   "angularCompilerOptions": {
-    "genDir": "./",
+    "genDir": ".",
     "entryModule": "src/app/modules/main.module.ts#MainModule",
     "debug": true
   },
