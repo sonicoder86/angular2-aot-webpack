@@ -9,7 +9,7 @@ module.exports = {
 
   output: require('./webpack/output'),
 
-  module: require('./webpack/module'),
+  module: require('./webpack/module.aot'),
 
   plugins: require('./webpack/plugins').concat([
     new ngtools.AotPlugin({
