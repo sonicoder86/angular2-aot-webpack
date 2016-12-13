@@ -4,5 +4,3 @@ dist
 typings
 .idea
 *.ngfactory.ts
-*.css.shim.ts
-.DS_Store

@@ -83,7 +83,7 @@ const nodeDebugInfos_HelloWorldComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_HelloWorldComponent:import3.RenderComponentType = import4.createRenderComponentType('/home/blacksonic/workspace/ng2-aot/src/app/components/hello-world.template.html',0,import5.ViewEncapsulation.Emulated,styles_HelloWorldComponent,{});
+var renderType_HelloWorldComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/isaac/Documents/Contributions/angular2-aot-webpack/src/app/components/hello-world.template.html',0,import5.ViewEncapsulation.Emulated,styles_HelloWorldComponent,{});
 export class View_HelloWorldComponent0 extends import1.DebugAppView<import0.HelloWorldComponent> {
   _el_0:any;
   _text_1:any;

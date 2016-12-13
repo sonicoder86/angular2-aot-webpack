@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
-    "declaration": false,
+    "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -15,7 +15,7 @@
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./ngfactory",
+    "outDir": "./build",
     "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
