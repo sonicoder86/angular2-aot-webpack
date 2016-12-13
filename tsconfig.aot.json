@@ -1,37 +1,37 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
     "declaration": true,
-    "removeComments": true,
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "mapRoot": "",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
-    "pretty": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitUseStrict": false,
-    "noFallthroughCasesInSwitch": true,
     "outDir": "./build",
     "rootDir": "./src/app",
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
-      "core-js",
       "node"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
     ]
   },
   "angularCompilerOptions": {
-    "debug": true
+    "genDir": ".",
+    "entryModule": "src/app/modules/main.module.ts#MainModule",
+    "debug": false
   },
   "compileOnSave": false,
-  "files": [
-    "src/app/modules/main.module.ts"
-  ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "**/*.ngfactory.ts",
+    "**/*.shim.ts",
+    "src/app/bootstrap*.ts",
+    "src/app/polyfill.ts"
   ]
 }

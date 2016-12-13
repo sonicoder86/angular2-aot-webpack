@@ -1,8 +1,7 @@
 node_modules
 build
 dist
-typings
+tmp
 .idea
 *.ngfactory.ts
-*.css.shim.ts
 .DS_Store

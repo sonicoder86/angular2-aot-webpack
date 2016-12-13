@@ -3,19 +3,17 @@ let path = require('path');
 let ngtools = require('@ngtools/webpack');
 
 module.exports = {
-  entry: require('./webpack/entry'),
+  entry: require('./webpack/entry.aot'),
 
   context: path.join(process.cwd(), 'src'),
 
   output: require('./webpack/output'),
 
-  module: require('./webpack/module'),
+  module: require('./webpack/module.aot'),
 
   plugins: require('./webpack/plugins').concat([
     new ngtools.AotPlugin({
-      tsConfigPath: path.join(process.cwd(), 'tsconfig.aot.json'),
-      baseDir: process.cwd(),
-      entryModule: path.join(process.cwd(), 'src', 'app', 'modules', 'main.module') + '#MainModule'
+      tsConfigPath: path.join(process.cwd(), 'tsconfig.aot.json')
     })
   ]),
 
