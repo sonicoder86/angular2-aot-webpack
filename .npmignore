@@ -3,3 +3,4 @@ dist
 typings
 .idea
 *.ngfactory.ts
+src
