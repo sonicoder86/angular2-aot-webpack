@@ -2,7 +2,7 @@
   "name": "angular2-aot-webpack",
   "version": "1.0.0",
   "description": "Angular 2 AOT (Ahead Of Time) offline compilation example with Webpack",
-  "main": "index.js",
+  "main": "build/modules/main.module.js",
   "scripts": {
     "cleanup": "rimraf src/app/**/*.ngfactory.ts src/app/**/*.shim.ts",
     "explorer": "source-map-explorer ./dist/bootstrap.bundle.js ./dist/bootstrap.bundle.js.map",
