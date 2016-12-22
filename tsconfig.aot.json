@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "",
     "module": "es2015",
     "moduleResolution": "node",
     "declaration": true,
@@ -11,6 +12,7 @@
     "experimentalDecorators": true,
     "outDir": "./build",
     "rootDir": "./src/app",
+    "skipLibCheck": true,
     "typeRoots": [ "./node_modules/@types" ],
     "types": [
       "node"
@@ -22,8 +24,7 @@
   },
   "angularCompilerOptions": {
     "genDir": ".",
-    "entryModule": "src/app/modules/main.module.ts#MainModule",
-    "debug": false
+    "entryModule": "src/app/modules/main.module#MainModule"
   },
   "compileOnSave": false,
   "exclude": [
