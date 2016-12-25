@@ -4,5 +4,7 @@ dist
 tmp
 .idea
 *.ngfactory.ts
+*.ngstyle.ts
 *.shim.ts
+*.ngsummary.json
 .DS_Store
