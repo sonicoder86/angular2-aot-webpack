@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = {
-  'main': './app/main.aot.ts',
+  'main': './app/main.jit.ts',
   'polyfill': './app/polyfill.ts'
 };

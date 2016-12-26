@@ -1,6 +1,5 @@
 'use strict';
 let path = require('path');
-let ngtools = require('@ngtools/webpack');
 
 module.exports = {
   entry: require('./webpack/entry.aot'),
@@ -9,13 +8,9 @@ module.exports = {
 
   output: require('./webpack/output'),
 
-  module: require('./webpack/module.aot'),
+  module: require('./webpack/module'),
 
-  plugins: require('./webpack/plugins').concat([
-    new ngtools.AotPlugin({
-      tsConfigPath: path.join(process.cwd(), 'tsconfig.json')
-    })
-  ]),
+  plugins: require('./webpack/plugins'),
 
   resolve: require('./webpack/resolve'),
 

@@ -29,7 +29,7 @@
     "dist",
     "**/*.ngfactory.ts",
     "**/*.shim.ts",
-    "src/app/bootstrap*.ts",
+    "src/app/main*.ts",
     "src/app/polyfill.ts"
   ],
   "awesomeTypescriptLoaderOptions": {

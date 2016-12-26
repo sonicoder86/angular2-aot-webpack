@@ -4,19 +4,16 @@
   "description": "Angular 2 AOT (Ahead Of Time) offline compilation example with Webpack",
   "main": "build/modules/main.module.js",
   "scripts": {
-    "cleanup": "rimraf src/app/**/*.ngfactory.ts src/app/**/*.shim.ts build",
-    "explorer": "source-map-explorer ./dist/bootstrap.bundle.js ./dist/bootstrap.bundle.js.map",
-    "explorer-aot": "source-map-explorer ./dist/bootstrap.aot.bundle.js ./dist/bootstrap.aot.bundle.js.map",
+    "cleanup": "rimraf src/app/**/*.ngfactory.ts src/app/**/*.ngstyle.ts src/app/**/*.ngsummary.json build dist",
+    "explorer": "source-map-explorer ./dist/main.bundle.js ./dist/main.bundle.js.map",
     "ngc": "ngc",
     "serve": "http-server ./dist -a 0.0.0.0 -p 9000",
-    "start": "npm run cleanup && npm run ngc && concurrently -r \"webpack-dev-server\" \"node ./bin/ngc-watch.js\"",
-    "start-plugin": "npm run cleanup && webpack-dev-server --config webpack.aot.config.js",
-    "start-prod": "npm run ngc && npm run webpack-prod && npm run serve",
-    "build": "npm run ngc && npm run webpack-prod",
+    "start": "npm run cleanup && npm run ngc && concurrently -r \"webpack-dev-server --config webpack.aot.config.js\" \"node ./bin/ngc-watch.js\"",
+    "start-prod": "npm run ngc && npm run build && npm run serve",
+    "build": "npm run cleanup && npm run ngc && webpack --config webpack.aot.config.js -p",
     "deploy": "gh-pages -d dist",
-    "webpack": "webpack --config webpack.config.js",
-    "webpack-aot": "webpack --config webpack.aot.config.js",
-    "webpack-prod": "webpack --config webpack.prod.config.js"
+    "aot": "npm run cleanup && npm run ngc && concurrently -r \"webpack-dev-server --config webpack.aot.config.js\" \"node ./bin/ngc-watch.js\"",
+    "jit": "npm run cleanup && webpack-dev-server --config webpack.jit.config.js"
   },
   "keywords": [
     "angular2",
@@ -46,7 +43,6 @@
   "devDependencies": {
     "@angular/compiler-cli": "2.4.1",
     "@angular/platform-server": "2.4.1",
-    "@ngtools/webpack": "1.2.1",
     "@types/node": "6.0.53",
     "angular2-template-loader": "0.6.0",
     "awesome-typescript-loader": "3.0.0-beta.17",

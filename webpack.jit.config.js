@@ -2,7 +2,7 @@
 let path = require('path');
 
 module.exports = {
-  entry: require('./webpack/entry'),
+  entry: require('./webpack/entry.jit'),
 
   context: path.join(process.cwd(), 'src'),
 
