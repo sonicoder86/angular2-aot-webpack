@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": "",
+    "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
     "declaration": true,
-    "target": "es5",
     "noImplicitAny": false,
     "sourceMap": true,
     "mapRoot": "",
@@ -22,11 +22,8 @@
       "es2015"
     ]
   },
-  "angularCompilerOptions": {
-    "genDir": ".",
-    "entryModule": "src/app/modules/main.module#MainModule"
-  },
   "compileOnSave": false,
+  "buildOnSave": false,
   "exclude": [
     "node_modules",
     "dist",
@@ -34,5 +31,9 @@
     "**/*.shim.ts",
     "src/app/bootstrap*.ts",
     "src/app/polyfill.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": ".",
+    "entryModule": "src/app/modules/main.module#MainModule"
+  },
 }
