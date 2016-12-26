@@ -35,5 +35,5 @@
   "angularCompilerOptions": {
     "genDir": ".",
     "entryModule": "src/app/modules/main.module#MainModule"
-  },
+  }
 }
