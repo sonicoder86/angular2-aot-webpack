@@ -7,7 +7,7 @@
     "cleanup": "rimraf src/app/**/*.ngfactory.ts src/app/**/*.shim.ts build",
     "explorer": "source-map-explorer ./dist/bootstrap.bundle.js ./dist/bootstrap.bundle.js.map",
     "explorer-aot": "source-map-explorer ./dist/bootstrap.aot.bundle.js ./dist/bootstrap.aot.bundle.js.map",
-    "ngc": "ngc -p ./tsconfig.aot.json",
+    "ngc": "ngc",
     "serve": "http-server ./dist -a 0.0.0.0 -p 9000",
     "start": "npm run cleanup && npm run ngc && concurrently -r \"webpack-dev-server\" \"node ./bin/ngc-watch.js\"",
     "start-plugin": "npm run cleanup && webpack-dev-server --config webpack.aot.config.js",

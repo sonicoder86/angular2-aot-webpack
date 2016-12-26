@@ -35,5 +35,9 @@
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
     "useWebpackText": true
+  },
+  "angularCompilerOptions": {
+    "genDir": ".",
+    "entryModule": "src/app/modules/main.module#MainModule"
   }
 }
