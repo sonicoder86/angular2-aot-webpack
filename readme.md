@@ -3,8 +3,9 @@
 [![devDependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack/dev-status.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack?type=dev)
 
 This repository shows how to use the Angular command line offline compiler ```ngc``` with Webpack.
-If you prefer the Webpack plugin provided by the Angular CLI, 
-it is moved to a [separate repository](https://github.com/blacksonic/angular2-aot-cli-webpack-plugin).
+
+> If you prefer the Webpack plugin provided by the Angular CLI, 
+it can be found in a [separate repository](https://github.com/blacksonic/angular2-aot-cli-webpack-plugin).
 
 The application consists of 
 a module (```src/app/modules/main.module.ts```)
