@@ -2,7 +2,7 @@
 [![Dependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack)
 [![devDependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack/dev-status.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack?type=dev)
 
-> This branch is using version 4 of Angular and will be merged to master when it becomes stable
+### This branch is using version 4 of Angular and will be merged to master when it becomes stable
 
 This repository shows how to use the Angular command line offline compiler ```ngc``` with Webpack.
 
