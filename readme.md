@@ -7,6 +7,8 @@ This repository shows how to use the Angular command line offline compiler ```ng
 > If you prefer the Webpack plugin provided by the Angular CLI, 
 it can be found in a [separate repository](https://github.com/blacksonic/angular2-aot-cli-webpack-plugin).
 
+> Example for version 4 of Angular can be found in a [separate branch](https://github.com/blacksonic/angular2-aot-webpack/tree/v4) until it gets stable
+
 The application consists of 
 a module (```src/app/modules/main.module.ts```)
 and a basic component (```src/app/components/hello-world.component.ts```) 
