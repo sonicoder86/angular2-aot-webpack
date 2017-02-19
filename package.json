@@ -60,6 +60,6 @@
     "to-string-loader": "1.1.5",
     "typescript": "2.0.10",
     "webpack": "2.2.0",
-    "webpack-dev-server": "2.2.0"
+    "webpack-dev-server": "2.4.0"
   }
 }
