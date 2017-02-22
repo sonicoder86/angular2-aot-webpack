@@ -22,8 +22,8 @@ module.exports = {
       test: /\.css$/,
       exclude: path.resolve(process.cwd(), 'src', 'app'),
       loader: ExtractTextPlugin.extract({
-        fallbackLoader: 'style-loader',
-        loader: 'css-loader'
+        fallback: 'style-loader',
+        use: 'css-loader'
       })
     }
   ]
