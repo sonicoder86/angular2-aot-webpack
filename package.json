@@ -50,7 +50,7 @@
     "concurrently": "3.3.0",
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "0.26.1",
-    "extract-text-webpack-plugin": "2.0.0-rc.3",
+    "extract-text-webpack-plugin": "2.0.0",
     "gh-pages": "0.12.0",
     "http-server": "0.9.0",
     "raw-loader": "0.5.1",
