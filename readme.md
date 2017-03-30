@@ -1,4 +1,4 @@
-# Angular 2 AOT (Ahead Of Time) offline compilation example with Webpack
+# Angular AOT (Ahead Of Time) offline compilation example with Webpack
 [![Dependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack)
 [![devDependency Status](https://david-dm.org/blacksonic/angular2-aot-webpack/dev-status.svg)](https://david-dm.org/blacksonic/angular2-aot-webpack?type=dev)
 
@@ -6,8 +6,6 @@ This repository shows how to use the Angular command line offline compiler ```ng
 
 > If you prefer the Webpack plugin provided by the Angular CLI, 
 it can be found in a [separate repository](https://github.com/blacksonic/angular2-aot-cli-webpack-plugin).
-
-> Example for version 4 of Angular can be found in a [separate branch](https://github.com/blacksonic/angular2-aot-webpack/tree/v4) until it gets stable
 
 The application consists of 
 a module (```src/app/modules/main.module.ts```)
@@ -50,5 +48,5 @@ The application is bundled with Webpack from the bootstrap files and is availabl
 ### Starters with AOT compilation available
 
 - [Angular CLI](https://github.com/angular/angular-cli)
-- [Angular 2 Seed](https://github.com/mgechev/angular-seed)
-- [Angular 2 Universal Starter](https://github.com/angular/universal-starter)
+- [Angular Seed](https://github.com/mgechev/angular-seed)
+- [Angular Universal Starter](https://github.com/angular/universal-starter)
