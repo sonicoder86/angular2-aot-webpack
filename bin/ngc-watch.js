@@ -8,7 +8,7 @@ let binPath = childProcess.execSync('npm bin', {
   encoding: 'utf8',
   cwd: process.cwd()
 });
-let ngcCommand = 'ngc -p ./tsconfig.aot.json';
+let ngcCommand = 'ngc -p ./tsconfig.json';
 let fullCommand = binPath.trim() + '/' + ngcCommand;
 
 chokidar.watch(
